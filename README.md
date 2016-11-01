@@ -3,6 +3,8 @@
 
 Just clone the repo and open index.html on your favorite browser :)
 
+See it live [here](https://mashruravi.github.io/cellular-automata/)
+
 ### Stuff to do
 - Include all the other rules of 1D Cellular Automata (build a 'rule book' of all 256 rules)
 - Allow selection of different colors for 'active' and 'inactive' cells
