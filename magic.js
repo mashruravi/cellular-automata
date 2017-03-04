@@ -4,7 +4,19 @@ function generateRandomBinaryState() {
 
 function createRow() {
     let row = document.createElement('div');
-    for(let i = 0; i < 151; i++) {
+
+    // Get the width of the browser viewport
+    let browserViewportWidth = window.innerWidth;
+
+    // Width of 1 cell is 10px.
+    let cellWidth = 10;
+
+    let maxCellsPossible = browserViewportWidth / cellWidth;
+
+    // Account for implicit padding on the left and scrollbars
+    maxCellsPossible -= 3;
+
+    for(let i = 0; i < maxCellsPossible; i++) {
         let cell = document.createElement('div');
         row.appendChild(cell);
     }
